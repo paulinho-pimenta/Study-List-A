@@ -9,7 +9,7 @@ nt busca_binaria_recursiva(int vetor[],int inicio,int fim,int x){
 
     
     return vetor[meio] > x ? busca_binaria_recursiva(vetor,inicio,meio - 1,x) : busca_binaria_recursiva(vetor,meio + 1,fim,x);
-}i
+}
 
 int main(){
     int n,x;
