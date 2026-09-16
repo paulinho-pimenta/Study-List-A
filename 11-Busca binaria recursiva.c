@@ -1,13 +1,11 @@
 #include <stdio.h>
 
-nt busca_binaria_recursiva(int vetor[],int inicio,int fim,int x){
+int busca_binaria_recursiva(int vetor[],int inicio,int fim,int x){
     if(inicio > fim) return -1;
 
     int meio = (inicio + fim) / 2;
-
     if(vetor[meio] == x) return meio;
 
-    
     return vetor[meio] > x ? busca_binaria_recursiva(vetor,inicio,meio - 1,x) : busca_binaria_recursiva(vetor,meio + 1,fim,x);
 }
 
